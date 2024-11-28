@@ -1,0 +1,9 @@
+Adım adım algoritma:
+
+Kullanıcı aralığın alt ve üst sınırını girer.
+Derleyici, aralıkta rastgele bir tamsayı üretir ve bunu gelecekteki referanslar için bir değişkende depolar.
+Tekrarlayan tahminler için while döngüsü başlatılacak.
+Kullanıcı rastgele seçilen bir sayıdan daha büyük bir sayı tahmin ederse, kullanıcı " Tekrar deneyin! Çok yüksek tahmin ettiniz " çıktısını alır.
+Aksi takdirde, kullanıcı rastgele seçilen bir sayıdan daha küçük bir sayı tahmin ederse, kullanıcı " Tekrar deneyin! Çok küçük tahmin ettiniz" çıktısını alır.
+Ve eğer kullanıcı en az sayıda tahminde bulunursa, kullanıcıya " Tebrikler! " çıktısı verilir.
+Aksi takdirde kullanıcı en az tahmin sayısında tam sayıyı tahmin edemezse " Bir Dahaki Sefere Daha İyi Şanslar! " çıktısını alacaktır.

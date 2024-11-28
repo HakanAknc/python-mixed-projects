@@ -1,0 +1,38 @@
+1. random.random()
+Kullanımı: random.random() bir 0.0 ile 1.0 arasında rastgele ondalıklı bir sayı (float) üretir.
+Parametre almaz. random.random(100) gibi bir kullanım hatalıdır.
+
+Örnek:
+import random
+print(random.random())  # Örn: 0.5346759434
+
+
+2. random.randint(a, b)
+Kullanımı: random.randint(a, b) iki sayı arasında (a ile b dahil) rastgele bir tam sayı (integer) üretir.
+Parametre zorunludur: En az iki sayı vermelisiniz.
+
+Örnek:
+import random
+print(random.randint(1, 100))  # Örn: 42 (1 ile 100 arasında tam sayı)
+
+
+3. random.randrange(stop) veya random.randrange(start, stop, step)
+Kullanımı: random.randrange(stop) veya random.randrange(start, stop, step) kullanılır. Belirtilen aralıktan bir rastgele tam sayı (integer) üretir.
+stop: Belirtilen son değere kadar (dahil değil) bir sayı üretir.
+start (opsiyonel): Başlangıç değerini belirtir (varsayılan 0’dır).
+step (opsiyonel): Sayılar arasındaki adımı belirtir.
+
+Örnekler:
+import random
+print(random.randrange(100))       # Örn: 57 (0 ile 99 arasında tam sayı)
+print(random.randrange(10, 100))  # Örn: 73 (10 ile 99 arasında tam sayı)
+print(random.randrange(10, 100, 5))  # Örn: 35 (10 ile 100 arasında 5'in katı)
+
+
+Özet Farklar:
+Fonksiyon	                Dönüş Tipi	                    Kapsam	                    Kullanımı
+random.random()	            Ondalıklı (float)	            0.0 ≤ x < 1.0	            random.random()
+random.randint(a, b)	    Tam sayı (int)	                a ≤ x ≤ b	                random.randint(1, 100)
+random.randrange()	        Tam sayı (int)	                start ≤ x < stop	        random.randrange(100) veya random.randrange(10, 100, 5)
+
+Hata yapmamak için: Parametre gereksinimlerini dikkatlice kontrol edin. Örneğin, random.random(100) yanlış bir kullanımdır, çünkü random() parametre almaz.
